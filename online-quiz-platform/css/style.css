@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  min-height: 100vh;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.3);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;   /* ✅ fixes button alignment */
+  text-align: center;
+  gap: 20px;             /* spacing between text & button */
+  animation: fade 1.5s ease;
+}
+
+
+.btn {
+  padding: 10px 20px;
+  background: #ffd86b;
+  border-radius: 25px;
+  color: black;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form-box, .quiz-box, .page-box, .result-box {
+  background: rgba(255,255,255,0.15);
+  width: 350px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: none;
+}
+
+@keyframes fade {
+  from {opacity:0; transform: translateY(20px);}
+  to {opacity:1;}
+}
